@@ -38,7 +38,7 @@ H = G.subgraph(nodes_in_large_components) # Teilgraph aus den großen Komponente
 
 Von den ursprünglichen 2831 Knoten des Netzwerks wurden 374 entfernt.
 
-Der Teilgraph H besteht aus **2457 Knoten**.
+Der Teilgraph H besteht aus **2457 Knoten und 4780 Kanten.**
 
 ### 2.2.2 Plot des Teilgraphen
 
@@ -47,7 +47,7 @@ Der Teilgraph H besteht aus **2457 Knoten**.
 Wie man erkennen kann, wurden die irrelevanten Knoten entfernt.
 
 
-## 2.3 Eigenschaften
+## 2.3 Eigenschaften des Netzwerks
 
 [] Todo
 
