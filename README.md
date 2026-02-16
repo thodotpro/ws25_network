@@ -20,11 +20,28 @@ Der simple Plot dient dafür eine grobe Vorstellung des Netzwerks zu bekommen un
 
 ## 2.2 Reduzierung des Netzwerks
 
-``` python
-print('hello')
-```
+**Hinweis**: Wird in weiterfolgendem Text von Netzwerk oder Graphen geschrieben, wird auf reduzierten Teilgraphen Bezug genommen!
 
-# 3. Conclusio
+### 2.2.1 Identifizierung der Cluster
+
+[] Todo
+
+### 2.2.2 Identifizierung der Knoten ohne Brücke zu **einem** Cluster
+
+[] Todo
+
+### 2.2.3 Plot des Teilgraphen
+
+[] Todo
+
+## 2.3 Eigenschaften
+
+[] Todo
+
+
+# 3. Schlussfolgerung
+
+[] Todo
 
 # 4. Aufwand
 
