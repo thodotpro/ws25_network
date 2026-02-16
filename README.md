@@ -40,6 +40,8 @@ Von den ursprünglichen 2831 Knoten des Netzwerks wurden 374 entfernt.
 
 Der Teilgraph H besteht aus **2457 Knoten und 4780 Kanten.**
 
+Der Teilgraph H hat **4 Zusammenhangskomponenten.**
+
 ### 2.2.2 Plot des Teilgraphen
 
 ![subgraph](/plots/subgraph.png "Teilgraph")
