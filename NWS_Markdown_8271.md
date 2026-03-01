@@ -10,6 +10,8 @@ In dieser Untersuchung wird ein ungerichteter Graph analysiert, der auf einem Da
 * **Reproduzierbarkeit (Random State):** Als Zufallswert (`random_state`) wurde die Zahl **8271** gewählt. Diese Nummer wurde aus der Summe der Matrikelnummern unserer Gruppe generiert, um sicherzustellen, dass die gezogene Stichprobe für unsere Gruppe einzigartig und das Ergebnis nachvollziehbar bleibt.
 * **Netzwerkgröße:** Der resultierende Graph umfasst **2831 Knoten**.
 
+![Netzwerk](plots/network.png)
+
 ---
 
 ## 2. Netzwerkanalyse: Kennzahlen & Interpretation
@@ -57,7 +59,16 @@ Das untersuchte Netzwerk weist eine klassische Core-Periphery-Struktur auf. Wäh
 
 ### 3.4 Gleichartigkeit
 
+![Communities](plots/communities.png)
+
 * **Interpretation:** Wir können davon ausgehen, dass innerhalb der gefundenen Communities eine hohe Gleichartigkeit herrscht. Nutzer verbinden sich bevorzugt mit Menschen, die ähnliche Merkmale aufweisen (gleiche Interessen, Wohnort). Dies begünstigt die Bildung von „Echo-Kammern“, in denen Informationen schnell zirkulieren, aber selten nach außen dringen.
+
+### 3.5 Viralität & Verbreitungsgeschwindigkeit
+
+* **Analyse:** Die Verteilung der kürzesten Pfade zeigt, dass die Mehrheit der Nutzer in nur **3 bis 4 Schritten** erreichbar ist.
+* **Interpretation (Small-World-Effekt):** Das Netzwerk ist extrem kompakt. Trotz der lokalen Cluster sorgt die Struktur dafür, dass Informationen (oder Viren) nicht langsam diffundieren, sondern sich viral und explosionsartig ausbreiten können.
+
+![Viralität](plots/hops.png)
 
 ---
 
@@ -82,7 +93,7 @@ Die Analyse des Facebook-Teilgraphen offenbart eine Netzwerkarchitektur, die pro
 
 ### 5.1 Die Effizienz der „Small World“-Struktur
 
-Trotz der geringen Netzwerkdichte ist das System hocheffizient. Während der Großteil der Nutzer nur spärlich vernetzt ist, garantieren zentrale Hubs, dass die durchschnittliche Distanz zwischen zwei Personen kurz bleibt. Informationen diffundieren nicht gleichmäßig, sondern „springen“ über diese Super-Connectoren in Rekordzeit durch das gesamte Netzwerk.
+Trotz der geringen Netzwerkdichte ist das System hocheffizient. Wie unsere Viraliäts-Analyse zeigte, beträgt die häufigste Distanz zwischen zwei Nutzern nur **3 bis 4 Kanten**. Während der Großteil der Nutzer nur spärlich vernetzt ist, garantieren zentrale Hubs, dass fast jeder im Netzwerk über sehr wenige Ecken erreichbar ist. Informationen diffundieren nicht gleichmäßig, sondern „springen“ über diese Super-Connectoren in Rekordzeit durch das gesamte Netzwerk.
 
 ### 5.2 Strukturelle Fragilität und das „Robust-yet-Fragile“-Paradigma
 
@@ -92,6 +103,6 @@ Das Netzwerk weist eine ambivalente Resilienz auf. Gegenüber zufälligen Ausfä
 
 Das geringe Clustering in Kombination mit der hohen Anzahl an Komponenten deutet auf eine soziale Fragmentierung hin. Nutzer bewegen sich in relativ homogenen, isolierten Clustern. Der Austausch von neuem Wissen hängt fast ausschließlich an den Brücken (Bridges). Ohne diese kritischen Verbindungen neigt das Netzwerk zur Bildung von „Echo-Kammern“, in denen Informationen nur innerhalb der eigenen Blase zirkulieren.
 
-### 5.4 Beurteilung
+### 5.4 Beurteilung: Ein Hochgeschwindigkeits-Netzwerk
 
-Zusammenfassend lässt sich das untersuchte Netzwerk als ein **„optimiertes, aber belastungsarmes Distanz-Netzwerk“** charakterisieren. Es ist perfekt auf die schnelle, virale Verbreitung von Informationen ausgelegt (hohe Reichweite durch Hubs), bietet jedoch wenig strukturelle Redundanz. Es ist ein hocheffizientes Informationssystem, das jedoch in seiner sozialen Tiefe zu wünschen übrig bleibt.
+Zusammenfassend lässt sich das untersuchte Netzwerk als ein **„optimiertes Hochgeschwindigkeits-Netzwerk“** charakterisieren. Die extrem kurzen Pfade machen es perfekt für die **virale Verbreitung** von Inhalten. Es ist auf maximale Reichweite und Geschwindigkeit ausgelegt, erkauft diese Effizienz jedoch mit einer strukturellen Abhängigkeit von wenigen zentralen Akteuren (Hubs). Es ist ein mächtiges, aber fragiles Informationssystem.
